@@ -29,7 +29,7 @@ Push to GitHub as `dumplings561-lgtm/ndm-marketing`
 
 ### Step 4: Verify Resend Domain (if not already done)
 The Resend API key is already configured for nightdaymed.net domain.
-Contact form sends FROM `noreply@nightdaymed.net` TO `anthony@nightdaymed.net`.
+Contact form sends FROM `noreply@nightdaymed.net` TO `contact@nightdaymed.net`.
 
 ## File Structure
 ```
@@ -49,8 +49,8 @@ ndm-marketing/
 
 ## Features
 - Pricing toggle: $99 Initial Consultation / $299 Complete Evaluation
-- Contact form → Resend API → anthony@nightdaymed.net
-- Click-to-call: (561) 427-9635
+- Contact form → Resend API → contact@nightdaymed.net
+- Click-to-call: (561) 802-0631
 - Stripe payment links for both tiers
 - Mobile responsive
 - Compliance-safe (no compound names, no telehealth refs, proper disclaimers)
