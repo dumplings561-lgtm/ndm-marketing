@@ -15,7 +15,7 @@ export default async function handler(req, res) {
 
   try {
     await resend.emails.send({
-      from: 'Night & Day Medical <noreply@nightdaymed.net>',
+      from: process.env.RESEND_FROM_EMAIL || 'Night & Day Medical <intake@resend.dev>',
       to: ['anthony@nightdaymed.net'],
       subject: `🔔 New Lead: ${name}`,
       html: `

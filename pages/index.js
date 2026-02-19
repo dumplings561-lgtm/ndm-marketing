@@ -197,6 +197,10 @@ export default function Home() {
               <p>Speak directly with our team. No phone trees. No hold music.</p>
               <a href="tel:5618020631" className="btn-gold" style={{width:'100%',justifyContent:'center'}}>&#128222; (561) 802-0631</a>
               <a href="mailto:contact@nightdaymed.net" className="contact-email-link">contact@nightdaymed.net</a>
+              <div className="contact-address" style={{marginTop:16,fontSize:13,color:'var(--text-on-dark-dim)',lineHeight:1.6}}>
+                <strong style={{color:'var(--text-on-dark)',fontSize:12,letterSpacing:'.06em',textTransform:'uppercase'}}>NYC Office</strong><br/>
+                14 E 60th St<br/>New York, NY 10022
+              </div>
             </div>
             <div className="contact-form-wrap">
               <h3>Send Us a Message</h3>
@@ -223,7 +227,7 @@ export default function Home() {
           <div className="footer-brand"><div className="nav-logo" style={{fontSize:22}}>Night <span>&amp;</span> Day Medical</div><p>Physician-directed evaluation and treatment for people who know something isn&rsquo;t right &mdash; and want real answers.</p></div>
           <div className="footer-col"><h4>Services</h4><a href="#services">Hormone Health</a><a href="#services">Peptide Therapy</a><a href="#services">Weight Management</a><a href="#services">Age Management</a><a href="#services">Sexual Wellness</a><a href="#services">Clinical Supplements</a></div>
           <div className="footer-col"><h4>Get Started</h4><a href="https://ndm-intake.vercel.app">Patient Assessment</a><a href="#process">How It Works</a><a href="#pricing">Pricing</a><a href="tel:5618020631">Call (561) 802-0631</a></div>
-          <div className="footer-col"><h4>Contact</h4><a href="mailto:contact@nightdaymed.net">contact@nightdaymed.net</a><a href="tel:5618020631">(561) 802-0631</a></div>
+          <div className="footer-col"><h4>Contact</h4><a href="mailto:contact@nightdaymed.net">contact@nightdaymed.net</a><a href="tel:5618020631">(561) 802-0631</a><span style={{fontSize:12,color:'var(--text-on-dark-dim)',lineHeight:1.5,marginTop:8,display:'block'}}>14 E 60th St, New York, NY 10022</span></div>
         </div>
         <div className="footer-disclaimer">This website is for informational purposes only and does not constitute medical advice, diagnosis, or treatment. A consultation does not guarantee a prescription &mdash; treatment is only prescribed when your physician determines it is clinically appropriate based on your individual lab results and medical evaluation. All treatments carry potential risks and side effects, which are discussed during your physician consultation. Not all patients are candidates for all therapies. Individual experiences vary. Night &amp; Day Medical does not guarantee specific health outcomes. Your information is confidential and handled in accordance with applicable privacy laws. Night &amp; Day Medical is not a substitute for emergency medical services &mdash; if you are experiencing a medical emergency, call 911.</div>
         <div className="footer-bottom"><span>&copy; 2026 Night &amp; Day Medical. All rights reserved.</span><span>Physician-directed care &middot; Nationwide</span></div>
