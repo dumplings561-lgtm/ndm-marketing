@@ -384,28 +384,39 @@ footer .nav-logo{color:var(--text-on-dark)}
   .hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
   section{padding:60px 20px}
   .hero{padding:100px 20px 40px}
-  .hero h1{font-size:36px}
+  .hero h1{font-size:30px;line-height:1.15}
+  .hero-badge{font-size:10px;letter-spacing:.06em;padding:6px 14px}
   .hero-sub{font-size:15px;line-height:1.7;margin-bottom:32px}
   .hero-actions{flex-direction:column;gap:12px;align-items:stretch}
   .hero-actions a{text-align:center;justify-content:center;padding:14px 24px}
   .problem-grid{grid-template-columns:1fr;gap:36px}
   .problem-stats{gap:16px}
-  .stat-number{font-size:32px;min-width:60px}
-  .services-grid{grid-template-columns:1fr}
+  .problem-stat{padding:20px;gap:16px}
+  .stat-number{font-size:32px;min-width:50px}
+  .services-grid{grid-template-columns:1fr;gap:16px;border-radius:12px}
+  .service-card{padding:28px 20px}
   .process-steps{grid-template-columns:1fr;gap:24px}.process-steps::before{display:none}
-  .diff-grid{grid-template-columns:1fr}
-  .diff-card-full{grid-template-columns:1fr;text-align:center}
-  .diff-card-full .diff-icon{font-size:36px}
-  .contact-grid{grid-template-columns:1fr}
+  .process-step{padding:28px 20px}
+  .step-num{font-size:36px}
+  .diff-grid{grid-template-columns:1fr;gap:16px}
+  .diff-card-full{grid-template-columns:1fr;text-align:center;padding:32px 20px}
+  .diff-card-full .diff-icon-lg{font-size:36px}
+  .diff-card{padding:28px 20px}
+  .contact-grid{grid-template-columns:1fr;gap:20px}
+  .contact-call,.contact-form-wrap{padding:28px 20px}
   .contact-call{text-align:center}
-  .section-title{font-size:28px}
+  .section-title{font-size:26px}
   .section-subtitle{font-size:15px}
-  .pricing-card{padding:32px 24px}
-  .price-amount{font-size:48px}
-  .cta-section h2{font-size:32px}
+  .pricing-card{padding:32px 20px}
+  .pricing-toggle button{font-size:12px;padding:8px 16px}
+  .price-amount{font-size:44px}
+  .price-popular{top:12px;right:12px;font-size:10px;padding:4px 10px}
+  .cta-section h2{font-size:28px}
+  .cta-sub{font-size:14px}
+  footer{padding:48px 20px 24px}
   .footer-inner{flex-direction:column;gap:32px}
   .footer-bottom{flex-direction:column;gap:4px;text-align:center}
-  .footer-disclaimer{font-size:10px}
+  .footer-disclaimer{font-size:10px;padding:0 8px}
 }
 @media(min-width:901px){
   .hamburger{display:none}
