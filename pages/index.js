@@ -408,6 +408,7 @@ footer .nav-logo{color:var(--text-on-dark)}
   .section-title{font-size:26px}
   .section-subtitle{font-size:15px}
   .pricing-card{padding:32px 20px}
+  .pricing-card .btn-primary{font-size:13px;padding:14px 20px;letter-spacing:.04em}
   .pricing-toggle button{font-size:12px;padding:8px 16px}
   .price-amount{font-size:44px}
   .price-popular{top:12px;right:12px;font-size:10px;padding:4px 10px}
