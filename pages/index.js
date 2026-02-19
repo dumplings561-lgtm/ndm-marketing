@@ -58,9 +58,9 @@ export default function Home() {
 
       <section className="hero">
         <div className="hero-content">
-          <div className="hero-badge fd1">Physician-Directed Wellness</div>
-          <h1 className="fd2">The Difference Is<br/><em>Night &amp; Day</em></h1>
-          <p className="hero-sub fd3">Most doctors run 20 markers and call it a day. We run over 100 &mdash; hormones, metabolic health, inflammation, and more &mdash; then a physician who actually knows you builds a plan around what the labs reveal. No rushed visits. No guesswork. Real answers.</p>
+          <div className="hero-badge fd1">Physician-Directed &middot; Data-Driven &middot; Human-Led</div>
+          <h1 className="fd2">Health Optimization,<br/><em>Built Around You</em></h1>
+          <p className="hero-sub fd3">We analyze 100+ biomarkers, assign you a dedicated clinical advisor, and connect you with a physician who actually takes the time to understand your body. No subscriptions. No rushed visits. No cookie-cutter protocols.</p>
           <div className="hero-actions fd4">
             <a href="https://ndm-intake.vercel.app" className="btn-primary">Take the Assessment &rarr;</a>
             <a href="#contact" className="btn-outline">Talk to Our Team</a>
