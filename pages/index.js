@@ -6,6 +6,7 @@ export default function Home() {
   const [formStatus, setFormStatus] = useState(null);
   const [sending, setSending] = useState(false);
   const [pricingOption, setPricingOption] = useState('complete');
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -42,13 +43,16 @@ export default function Home() {
 
       <nav>
         <div className="nav-logo">Night <span>&amp;</span> Day Medical</div>
-        <div className="nav-links">
-          <a href="#problem">Why Us</a>
-          <a href="#services">Services</a>
-          <a href="#process">Process</a>
-          <a href="#pricing">Get Started</a>
-          <a href="#contact">Contact</a>
-          <a href="https://ndm-intake.vercel.app" className="nav-cta">Start Your Assessment</a>
+        <button className={`hamburger ${mobileMenuOpen ? 'open' : ''}`} onClick={() => setMobileMenuOpen(!mobileMenuOpen)} aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+        <div className={`nav-links ${mobileMenuOpen ? 'mobile-open' : ''}`}>
+          <a href="#problem" onClick={() => setMobileMenuOpen(false)}>Why Us</a>
+          <a href="#services" onClick={() => setMobileMenuOpen(false)}>Services</a>
+          <a href="#process" onClick={() => setMobileMenuOpen(false)}>Process</a>
+          <a href="#pricing" onClick={() => setMobileMenuOpen(false)}>Get Started</a>
+          <a href="#contact" onClick={() => setMobileMenuOpen(false)}>Contact</a>
+          <a href="https://ndm-intake.vercel.app" className="nav-cta" onClick={() => setMobileMenuOpen(false)}>Start Your Assessment</a>
         </div>
       </nav>
 
@@ -56,7 +60,7 @@ export default function Home() {
         <div className="hero-content">
           <div className="hero-badge fd1">Physician-Directed Wellness</div>
           <h1 className="fd2">The Difference Is<br/><em>Night &amp; Day</em></h1>
-          <p className="hero-sub fd3">Between being told you&rsquo;re fine and finding out what&rsquo;s actually wrong. Between a basic panel and 100+ biomarkers that reveal what&rsquo;s really going on. Between 8 minutes with a doctor who doesn&rsquo;t know you and a physician-led team that does.</p>
+          <p className="hero-sub fd3">Most doctors run 20 markers and call it a day. We run over 100 &mdash; hormones, metabolic health, inflammation, and more &mdash; then a physician who actually knows you builds a plan around what the labs reveal. No rushed visits. No guesswork. Real answers.</p>
           <div className="hero-actions fd4">
             <a href="https://ndm-intake.vercel.app" className="btn-primary">Take the Assessment &rarr;</a>
             <a href="#contact" className="btn-outline">Talk to Our Team</a>
@@ -85,7 +89,7 @@ export default function Home() {
                 <div className="stat-text"><strong>Minutes.</strong> That&rsquo;s the average primary care visit. Not enough time to understand what&rsquo;s actually happening inside your body.</div>
               </div>
               <div className="problem-stat fd3">
-                <div className="stat-number">~20</div>
+                <div className="stat-number">20</div>
                 <div className="stat-text"><strong>Markers tested</strong> in a standard panel. We test over 100 &mdash; hormones, metabolic indicators, inflammatory markers, and more.</div>
               </div>
               <div className="problem-stat fd4">
@@ -363,12 +367,43 @@ footer .nav-logo{color:var(--text-on-dark)}
 .footer-bottom{max-width:1140px;margin:16px auto 0;display:flex;justify-content:space-between;font-size:11px;color:var(--text-on-dark-dim);opacity:.5}
 
 @media(max-width:900px){
-  nav{padding:0 20px}.nav-links{display:none}section{padding:80px 20px}
-  .problem-grid{grid-template-columns:1fr;gap:48px}.services-grid{grid-template-columns:1fr}
-  .process-steps{grid-template-columns:1fr 1fr;gap:36px}.process-steps::before{display:none}
-  .diff-grid{grid-template-columns:1fr}.diff-card-full{grid-template-columns:1fr;text-align:center}
-  .hero{padding:120px 20px 60px}.contact-grid{grid-template-columns:1fr}
-  .footer-inner{flex-direction:column}.footer-bottom{flex-direction:column;gap:4px}
+  nav{padding:0 20px}
+  .nav-links{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:var(--cream);flex-direction:column;align-items:center;justify-content:center;gap:24px;z-index:999}
+  .nav-links.mobile-open{display:flex}
+  .nav-links.mobile-open a{font-size:18px;color:var(--navy)}
+  .nav-links.mobile-open .nav-cta{font-size:16px;padding:14px 32px}
+  .hamburger{display:flex;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;z-index:1000}
+  .hamburger span{display:block;width:24px;height:2px;background:var(--navy);border-radius:2px;transition:all .3s}
+  .hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+  .hamburger.open span:nth-child(2){opacity:0}
+  .hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+  section{padding:60px 20px}
+  .hero{padding:100px 20px 40px}
+  .hero h1{font-size:36px}
+  .hero-sub{font-size:15px;line-height:1.7;margin-bottom:32px}
+  .hero-actions{flex-direction:column;gap:12px;align-items:stretch}
+  .hero-actions a{text-align:center;justify-content:center;padding:14px 24px}
+  .problem-grid{grid-template-columns:1fr;gap:36px}
+  .problem-stats{gap:16px}
+  .stat-number{font-size:32px;min-width:60px}
+  .services-grid{grid-template-columns:1fr}
+  .process-steps{grid-template-columns:1fr;gap:24px}.process-steps::before{display:none}
+  .diff-grid{grid-template-columns:1fr}
+  .diff-card-full{grid-template-columns:1fr;text-align:center}
+  .diff-card-full .diff-icon{font-size:36px}
+  .contact-grid{grid-template-columns:1fr}
+  .contact-call{text-align:center}
+  .section-title{font-size:28px}
+  .section-subtitle{font-size:15px}
+  .pricing-card{padding:32px 24px}
+  .price-amount{font-size:48px}
+  .cta-section h2{font-size:32px}
+  .footer-inner{flex-direction:column;gap:32px}
+  .footer-bottom{flex-direction:column;gap:4px;text-align:center}
+  .footer-disclaimer{font-size:10px}
+}
+@media(min-width:901px){
+  .hamburger{display:none}
 }
       `}</style>
     </>
