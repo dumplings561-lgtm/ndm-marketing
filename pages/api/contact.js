@@ -16,7 +16,7 @@ export default async function handler(req, res) {
   try {
     await resend.emails.send({
       from: 'Night & Day Medical <noreply@nightdaymed.net>',
-      to: ['contact@nightdaymed.net'],
+      to: ['anthony@nightdaymed.net'],
       subject: `🔔 New Lead: ${name}`,
       html: `
         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 560px; margin: 0 auto; background: #0C0A09; color: #F2EDE8; padding: 32px; border-radius: 12px;">

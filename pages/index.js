@@ -59,7 +59,7 @@ export default function Home() {
           <p className="hero-sub fd3">Between being told you&rsquo;re fine and finding out what&rsquo;s actually wrong. Between a basic panel and 100+ biomarkers that reveal what&rsquo;s really going on. Between 8 minutes with a doctor who doesn&rsquo;t know you and a physician-led team that does.</p>
           <div className="hero-actions fd4">
             <a href="https://ndm-intake.vercel.app" className="btn-primary">Take the Assessment &rarr;</a>
-            <a href="tel:5618020631" className="btn-outline">Talk to Our Team</a>
+            <a href="#contact" className="btn-outline">Talk to Our Team</a>
           </div>
         </div>
       </section>
@@ -165,7 +165,7 @@ export default function Home() {
                 <div className="price-name">Initial Consultation</div>
                 <div className="price-desc">A focused conversation with your clinical advisor and physician to discuss your symptoms, health history, and goals &mdash; and determine next steps.</div>
                 <ul className="price-includes"><li>Dedicated clinical advisor assigned</li><li>Physician review of your health history</li><li>Personalized recommendations for evaluation</li><li>No obligation to continue</li></ul>
-                <a href="https://buy.stripe.com/aFa8wQc4Z8aX0BzbQj8bS01" className="btn-primary" style={{width:'100%',justifyContent:'center'}}>Book Initial Consultation &rarr;</a>
+                <a href="https://ndm-intake.vercel.app" className="btn-primary" style={{width:'100%',justifyContent:'center'}}>Book Initial Consultation &rarr;</a>
               </>
             ) : (
               <>
@@ -174,7 +174,7 @@ export default function Home() {
                 <div className="price-desc">Our full diagnostic workup &mdash; comprehensive bloodwork, physician consultation, and a complete clinical picture of where your health stands.</div>
                 <ul className="price-includes"><li>Dedicated clinical advisor from day one</li><li>100+ biomarker lab panel (hormones, metabolic, thyroid, cardiac, inflammatory)</li><li>Full physician consultation with detailed results review</li><li>Personalized treatment recommendations if clinically appropriate</li></ul>
                 <div className="price-popular">Most Popular</div>
-                <a href="https://buy.stripe.com/cNi6oId9376T5VTdYr8bS00" className="btn-primary" style={{width:'100%',justifyContent:'center'}}>Book Complete Evaluation &rarr;</a>
+                <a href="https://ndm-intake.vercel.app" className="btn-primary" style={{width:'100%',justifyContent:'center'}}>Book Complete Evaluation &rarr;</a>
               </>
             )}
             <p className="price-note">This covers your initial evaluation. If treatment is recommended, your physician will walk you through options and costs during your consultation &mdash; no surprises.</p>
@@ -222,7 +222,7 @@ export default function Home() {
           <div className="footer-col"><h4>Contact</h4><a href="mailto:contact@nightdaymed.net">contact@nightdaymed.net</a><a href="tel:5618020631">(561) 802-0631</a></div>
         </div>
         <div className="footer-disclaimer">This website is for informational purposes only and does not constitute medical advice, diagnosis, or treatment. A consultation does not guarantee a prescription &mdash; treatment is only prescribed when your physician determines it is clinically appropriate based on your individual lab results and medical evaluation. All treatments carry potential risks and side effects, which are discussed during your physician consultation. Not all patients are candidates for all therapies. Individual experiences vary. Night &amp; Day Medical does not guarantee specific health outcomes. Your information is confidential and handled in accordance with applicable privacy laws. Night &amp; Day Medical is not a substitute for emergency medical services &mdash; if you are experiencing a medical emergency, call 911.</div>
-        <div className="footer-bottom"><span>&copy; 2026 Night &amp; Day Medical. All rights reserved.</span><span><a href="#" style={{color:'inherit',textDecoration:'none'}}>Privacy Policy</a> &middot; <a href="#" style={{color:'inherit',textDecoration:'none'}}>Terms of Service</a> &middot; Physician-directed care &middot; Nationwide</span></div>
+        <div className="footer-bottom"><span>&copy; 2026 Night &amp; Day Medical. All rights reserved.</span><span>Physician-directed care &middot; Nationwide</span></div>
       </footer>
 
       <style jsx global>{`
